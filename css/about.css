@@ -105,99 +105,67 @@ p {
     margin-bottom: 20px;
 }
 
-.top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.top-content{
+    width: 100%;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    padding-bottom: 30px;
+    padding-left: 17px;
 }
 
-.top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
-}
-
-.middle-content {
+.middle-content{
+    width: 100%;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    padding-bottom: 30px;
+    padding-left: 17px;
 }
 
-.middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
+.row{
+    width: 100%;
 }
 
-.middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.col{
+    width: 45%;
+    display: inline-block;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.col2{
+    width: 45%;
+    display: inline-block;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 90px;
 }
 
-.middle-content .boxes .box.box1{
-    background: teal;
+.hwework{
+    position: relative;
+    left: 35px;
 }
 
-.middle-content .boxes .box.box2{
-    background: gold;
+h3{
+    margin-top: 10px;
 }
 
-.middle-content .boxes .box.box3{
-    background: cadetblue;
+.learnmore{
+    text-decoration: none;
+    color: black;
+    border-radius: 12px;
+    border: 2px solid black;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-.middle-content .boxes .box.box4{
-    background: coral;
-}
-
-.middle-content .boxes .box.box5{
-    background: crimson;
-}
-
-.middle-content .boxes .box.box6{
-    background: forestgreen;
-}
-
-.middle-content .boxes .box.box7{
-    background: darkorchid;
-}
-
-.middle-content .boxes .box.box8{
-    background: hotpink;
-}
-
-.middle-content .boxes .box.box9{
-    background: indigo;
-}
-
-.middle-content .boxes .box.box10{
-    background: dodgerblue;
-}
-
-.bottom-content {
-    display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
-}
-
-.bottom-content .text-container {
-    padding-right: 4%;
-}
-
-.bottom-content .text-container:last-child {
-    padding-right: 0;
+.learnmore:hover{
+    animation-name: learn;
+	animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 
 footer {
@@ -225,16 +193,11 @@ footer nav a:hover{
     animation-fill-mode: forwards;
 }
 
-@keyframes bnavigation{
-	from{
-		background-color: black;
-        font-size: 13px;
-	}
-	to{
-		font-size: 18px;
-        font-weight: 600;
-        border-radius: 25px;
-	}
+.work2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 @keyframes navigation{
@@ -244,6 +207,32 @@ footer nav a:hover{
 	}
 	to{
 		background-color: crimson;
+		font-size: 18px;
+        font-weight: 600;
+        border-radius: 25px;
+	}
+}
+
+@keyframes learn{
+	from{
+		background-color: white;
+        font-size: 13px;
+
+	}
+	to{
+		background-color: crimson;
+		font-size: 18px;
+        font-weight: 600;
+        border-radius: 25px;
+	}
+}
+
+@keyframes bnavigation{
+	from{
+		background-color: black;
+        font-size: 13px;
+	}
+	to{
 		font-size: 18px;
         font-weight: 600;
         border-radius: 25px;
